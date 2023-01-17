@@ -1,0 +1,86 @@
+@use "breakpoints" as *;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include breakpoint(laptop) {
+    padding: 0;
+  }
+}
+
+.primary-text {
+  color: var(--green);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #fff;
+  background: var(--green);
+}
+
+.btn-light {
+  color: var(--green);
+  background: #fff;
+}
+
+.lead {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.border {
+  width: 20rem;
+  height: 0.3rem;
+  background-color: var(--green);
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+
+.hide-navbar {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 1rem;
+  padding: 1rem;
+  letter-spacing: 1px;
+}
+.social-btn-dark {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--gray);
+  background: var(--dark-gray);
+  border-radius: 50%;
+  // border: 1px solid var(--green);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 0.8rem;
+}
+
+.social-btn-light {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+}
+
+.active-link {
+  border-bottom: 3px solid var(--green);
+}
