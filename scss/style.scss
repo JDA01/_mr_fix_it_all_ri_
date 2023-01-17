@@ -25,6 +25,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
   font-size: 10px;
 }
 
@@ -46,7 +47,7 @@ section {
 // SHOWCASE SECTION
 
 #showcase {
-  //background: url(https://pixabay.com/get/gf9568acac0c7bdb0a54de1606d9a881d3f9453086e9c480614fdbfa44327ab40d809645e60753ee559ff0e0d732884d7130e06e76633561cb2ceedf4dc1e3e987226309993217a6ea726b57da9e4a769_1920.jpg);
+  background: url(https://pixabay.com/get/gb913b25c383153505de50f29e9884c05fc97d8b09fe49aa0023d1749e15c692d0774b682999462e4959ed02f6b3c4de00aa6fb4cfcdd368b1ee4f39f26cece142c30dc606f7dc89a09c926d1fee8e450_1920.jpg);
   background-attachment: fixed;
   background-blend-mode: darken;
   background-position: center;
@@ -388,7 +389,8 @@ section {
 }
 
 #contact {
-  background: url(../dist/pics/office.jpg) no-repeat center center/cover;
+  background: url(https://pixabay.com/get/g1642e87901d548f2ad2ac22368220b49634828562dd7cf39693d8d48fd87de58fea775ecef6a22771fc2b289e256e3e687610b82defc3596423220b3c88d2ba3115e07c68e7ed63d809f5cab4565f3c3_1920.jpg)
+    no-repeat center center/cover;
 
   @include breakpoint(laptop) {
     padding: 0;
