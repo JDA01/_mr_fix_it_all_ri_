@@ -388,7 +388,7 @@ section {
 }
 
 #contact {
-  background: url(/dist/pics/office.jpg) no-repeat center center/cover;
+  background: url(../dist/pics/office.jpg) no-repeat center center/cover;
 
   @include breakpoint(laptop) {
     padding: 0;
