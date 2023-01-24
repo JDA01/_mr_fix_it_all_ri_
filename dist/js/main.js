@@ -22,6 +22,10 @@ navItems.forEach((item) => {
   item.addEventListener("click", () => {
     clearActiveClass();
     item.classList.add("active-link");
+    if (window.innerWidth <= 820) {
+      burgerBtn.classList.toggle("active");
+      menu.classList.toggle("menuOpen");
+    }
   });
 });
 
@@ -78,5 +82,24 @@ if (window.screen.width <= 500) {
     } else {
       navbar.classList.remove("hide-navbar");
     }
+  });
+}
+
+// Testimonials
+const tSlider = document.querySelector(".t-slider").children;
+const tLinks = document.querySelector(".slider-indicator").children;
+
+for (let i = 0; i < tLinks.length; i++) {
+  tLinks[i].addEventListener("click", function () {
+    for (let j = 0; j < tLinks.length; j++) {
+      tLinks[j].classList.remove("t-active");
+    }
+
+    this.classList.add("t-active");
+    const id = this.getAttribute("data-id");
+    for (let j = 0; j < tSlider.length; j++) {
+      tSlider[j].classList.remove("t-active");
+    }
+    tSlider[id].classList.add("t-active");
   });
 }
