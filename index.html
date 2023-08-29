@@ -210,20 +210,32 @@
     <section id="contact">
      <div class="container">
       <div class="form-box">
-        <form action="">
+        <form action="https://formsubmit.co/01juandalzate01@gmail.com" method="POST">
           <div>
            <h2>get in touch</h2>
           <div class="input-box">
-            <input type="text" id="nmae" required />
+            <input type="text" id="name"  name="name" required />
             <label for="name">full name</label>
           </div>
           <div class="input-box">
-            <input type="email" id="email" required />
+            <input type="email" id="email" name="email" required />
             <label for="email">email address</label>
           </div>
           <div class="input-box">
-            <textarea id="message" required></textarea>
-            <label for="message">type your message</label>
+            <input type="number" id="number" name="number" required />
+            <label for="number">phone number </label>
+          </div>
+          <div class="input-box">
+            <textarea id="project" name="project" required></textarea>
+            <label for="project">tell us about your next project</label>
+          </div>
+          <div class="input-box">
+            <textarea id="date" name="startDate" required></textarea>
+            <label for="date">what day would you like us to start?</label>
+          </div>
+          <div class="input-box">
+            <textarea id="source" name="mediaSource" required></textarea>
+            <label for="source">how did you here about us?</label>
           </div>
           <div class="input-box">
             <button type="submit" class="btn btn-dark">send</button>
